@@ -155,7 +155,7 @@ def processar_pessoa():
     print(f"Classificação : {classificacao} {emoji}")
 
 
-# ---- EXECUÇÃO PRINCIPAL ----
+# ---- EXECUÇÃO PRINCIPAL -----
 
 exibir_cabecalho()
 
