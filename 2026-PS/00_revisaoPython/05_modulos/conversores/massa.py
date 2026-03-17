@@ -31,7 +31,7 @@ def kg_para_gramas(kg):
 
 
 if __name__ == "__main__":
-    # Este bloco só executa se este arquivo for rodado diretamente.
+    #  Este bloco só executa se este arquivo for rodado diretamente.
     print("Testando massa.py...")
     print(f"1 kg = {kg_para_libras(1):.5f} lb (esperado: 2.20462)")
     print(f"2.5 kg = {kg_para_gramas(2.5)} g (esperado: 2500)")
