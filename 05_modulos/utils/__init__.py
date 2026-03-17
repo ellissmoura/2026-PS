@@ -1,1 +1,0 @@
-from .formatador import linha_separadora, formatar_resultado, cabecalho_secao
