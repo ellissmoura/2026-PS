@@ -8,8 +8,8 @@
 # ================================================================
 
 class Pet:
-    def __init__(self, nome, especie, hospedado=False, nome_dono=None, telefone_dono=None, observacoes=None, vacinado=False, peso=None):
-        self.nome = nome
+    def __init__(self, nome, especie, hospedado=False, nome_dono=None, telefone_dono=None, observacoes=None, vacinado=False, peso=None): # função, init=guarda informaçoes
+        self.nome = nome # self é o objeto (pet)
         self.especie = especie
         self.hospedado = hospedado
         self.nome_dono = nome_dono
