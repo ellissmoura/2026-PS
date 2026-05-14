@@ -93,7 +93,7 @@ class Pet:
 
 pet1 = Pet("Pitufo", "Passarinho", hospedado=True, nome_dono="Ellis", telefone_dono="123456789", observacoes="Tagarela, assobiador, gosta de sementes de girassol", vacinado=True, peso=0.2)
 pet2 = Pet("GuiNegão", "Gato", hospedado=False, nome_dono="Ellis", telefone_dono="123456789", observacoes="Dorminhoco, comilhão, bravo", vacinado=False, peso=4.5)
-pet3 = Pet("Nega", "Cadela", hospedado=True, nome_dono="Ellis", telefone_dono="123456789", observacoes="Quieta, medrosa", vacinado=True, peso=20)
+pet3 = Pet("Nega", "Cadela")
 
 pet1.emitir_relatorio()
 pet1.verificar_vacinacao()
