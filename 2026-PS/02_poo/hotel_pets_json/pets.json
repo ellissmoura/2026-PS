@@ -1,0 +1,35 @@
+[
+    {
+        "nome": "Rex",
+        "especie": "Cachorro",
+        "idade": 5,
+        "peso": 20.5,
+        "altura": 55,
+        "data_nascimento": "10/03/2021",
+        "nome_dono": "João",
+        "vacinado": true,
+        "hospedado": false
+    },
+    {
+        "nome": "Mia",
+        "especie": "Gato",
+        "idade": 3,
+        "peso": 4.2,
+        "altura": 25,
+        "data_nascimento": "15/07/2023",
+        "nome_dono": "Ana",
+        "vacinado": true,
+        "hospedado": false
+    },
+    {
+        "nome": "Thor",
+        "especie": "Papagaio",
+        "idade": 2,
+        "peso": 1.1,
+        "altura": 18,
+        "data_nascimento": "01/01/2024",
+        "nome_dono": "Carlos",
+        "vacinado": false,
+        "hospedado": false
+    }
+]
