@@ -4,7 +4,7 @@ public class CardapioRestaurante {
 
     public static void main(String[] args) {
 
-        Scanner exumaldtoobitoaaaa = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
         System.out.println("=================================");
         System.out.println("     CARDÁPIO ELETRÔNICO");
@@ -13,10 +13,11 @@ public class CardapioRestaurante {
         System.out.println("2 - Pizza .............. R$ 35,00");
         System.out.println("3 - Suco Natural ....... R$ 8,00");
         System.out.println("4 - Café ............... R$ 5,00");
+        System.out.println("5 - Coca-Cola........... R$ 5,00");
         System.out.println("=================================");
 
         System.out.print("Escolha uma opção: ");
-        int opcao = exumaldtoobitoaaaa.nextInt();
+        int opcao = entrada.nextInt();
 
         String item = "";
         double preco = 0;
@@ -33,14 +34,17 @@ public class CardapioRestaurante {
         } else if (opcao == 4) {
             item = "Café";
             preco = 5.00;
+        }else if (opcao == 5) {
+            item = "Coca-Cola";
+            preco = 5.00; 
         } else {
             System.out.println("Opção inválida.");
-            exumaldtoobitoaaaa.close();
+            entrada.close();
             return;
         }
 
         System.out.print("Digite a quantidade desejada: ");
-        int quantidade = exumaldtoobitoaaaa.nextInt();
+        int quantidade = entrada.nextInt();
 
         double total = preco * quantidade;
 
