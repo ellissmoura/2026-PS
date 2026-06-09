@@ -16,8 +16,8 @@ public class CardapioRestaurante {
             System.out.println("=================================");
             System.out.println("     CARDÁPIO ELETRÔNICO");
             System.out.println("=================================");
-            System.out.println("1 - X-Burguer .......... R$ 18,00");
-            System.out.println("2 - Pizza .............. R$ 35,00");
+            System.out.println("1 - Whopper .......... R$ 18,00");
+            System.out.println("2 - Cachorro-orelha .............. R$ 35,00");
             System.out.println("3 - Batata Frita ....... R$ 12,00");
             System.out.println("4 - Refrigerante ....... R$ 8,00");
             System.out.println("5 - Sorvete ............ R$ 10,00");
@@ -32,11 +32,11 @@ public class CardapioRestaurante {
 
             switch (opcao) {
                 case 1:
-                    item = "X-Burguer";
+                    item = "Whopper";
                     preco = 18.00;
                     break;
                 case 2:
-                    item = "Pizza";
+                    item = "Cachorro-orelha";
                     preco = 35.00;
                     break;
                 case 3:
@@ -52,7 +52,13 @@ public class CardapioRestaurante {
                     preco = 10.00;
                     break;
                 case 6:
-                    continuar = false;
+                    System.out.print("Deseja realmente finalizar o pedido? (1 - Sim / 2 - Não): ");
+                    int confirmar = entrada.nextInt();
+                    if (confirmar == 1) {
+                        continuar = false; // encerra o loop
+                    } else {
+                        continuar = true;  // volta ao cardápio
+                    }
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
@@ -83,6 +89,7 @@ public class CardapioRestaurante {
         System.out.println("1 - Dinheiro");
         System.out.println("2 - Cartão");
         System.out.println("3 - PIX");
+        System.out.println("4 - Cheque");
         System.out.print("Escolha a forma de pagamento: ");
         int pagamento = entrada.nextInt();
 
@@ -95,6 +102,9 @@ public class CardapioRestaurante {
                 break;
             case 3:
                 System.out.println("Pagamento via PIX selecionado.");
+                break;
+            case 4:
+                System.out.println("Pagamento de Cheque selecionado.");
                 break;
             default:
                 System.out.println("Forma de pagamento inválida.");
