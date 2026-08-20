@@ -1,23 +1,26 @@
 /*
-* disciplina: 2026-PS
-*estudante: ELLIS MARIA SANDANO DE MOURA
-*data: 2026.08.13
-*projeto: aula32-projeto-secretaria
-*arquivo: aluno.java */
+ * Disciplina: 2026-P5
+ * Estudante: Ellis
+ * Data: 2026.08.20
+ * Projeto: aula32-projeto-secretaria
+ * Arquivo: Aluno.java
+ */
 
 public class Aluno {
+
     private String nome;
     private String matricula;
     private String curso;
+    private String cidade; 
 
-    // Construtor
-    public Aluno(String nome, String matricula, String curso) {
+
+    public Aluno(String nome, String matricula, String curso, String cidade) {
         this.nome = nome;
         this.matricula = matricula;
         this.curso = curso;
+        this.cidade = cidade;
     }
 
-    // Getters
     public String getNome() {
         return nome;
     }
@@ -30,16 +33,15 @@ public class Aluno {
         return curso;
     }
 
-    // Setters
+    public String getCidade() {
+        return cidade;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
-    }
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
     }
 
     public void setCurso(String curso) {
         this.curso = curso;
     }
 }
-
