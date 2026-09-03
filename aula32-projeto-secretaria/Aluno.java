@@ -1,47 +1,50 @@
-/*
- * Disciplina: 2026-P5
- * Estudante: Ellis
- * Data: 2026.08.20
- * Projeto: aula32-projeto-secretaria
- * Arquivo: Aluno.java
- */
-
 public class Aluno {
-
+    private int matricula;
     private String nome;
-    private String matricula;
     private String curso;
-    private String cidade; 
+    private double ira;
 
-
-    public Aluno(String nome, String matricula, String curso, String cidade) {
-        this.nome = nome;
+    public Aluno(int matricula, String nome, String curso, double ira) {
         this.matricula = matricula;
+        this.nome = nome;
         this.curso = curso;
-        this.cidade = cidade;
+        this.ira = ira;
+    }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public String getMatricula() {
-        return matricula;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getCurso() {
         return curso;
     }
 
-    public String getCidade() {
-        return cidade;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public void setCurso(String curso) {
         this.curso = curso;
+    }
+
+    public double getIra() {
+        return ira;
+    }
+
+    public void setIra(double ira) {
+        this.ira = ira;
+    }
+
+    @Override
+    public String toString() {
+        return "Matrícula: " + matricula + " | Nome: " + nome + " | Curso: " + curso + " | IRA: " + ira;
     }
 }
