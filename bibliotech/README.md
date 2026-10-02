@@ -38,6 +38,11 @@ O que o sistema resolve: vai facilitar o trabalho dentro da biblioteca, tornando
 | RNF02 | Somente usuarios identificados como bibliotecarios podem alterar o acervo. |
 
 ## 4. Diagramas (feitos em APS)
+
+## 5. O que o codigo devolveu ao diagrama (Aula 37)
+
+- Livro ganhou o atributo disponivel: boolean, porque estaDisponivel() precisa guardar o estado.
+- Leitor ganhu livrosEmMaos: int, porque podePegarEmprestado() compara com o limite.
 ​
 ### Casos de uso
 ​
