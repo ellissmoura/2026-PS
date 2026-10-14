@@ -51,3 +51,11 @@ O que o sistema resolve: vai facilitar o trabalho dentro da biblioteca, tornando
 ### Classes
 ​
 ![Diagrama de classes do BiblioTech](docs/classes.svg)
+
+## 6. Como executar
+
+```
+javac *.java
+java TesteRequisitos
+java TelaBiblioteca
+```
