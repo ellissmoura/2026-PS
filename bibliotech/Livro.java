@@ -11,6 +11,8 @@ public class Livro {
     private String autor;
     private int ano;
     private boolean disponivel;
+    private int id;
+
 
     public Livro(String titulo, String autor, int ano){
         this.titulo = titulo;
@@ -48,6 +50,23 @@ public class Livro {
     return titulo + " (" + autor + ", " + ano + ") - " + situacao;
     
     }
+
+    public int getId() {
+    return id;
+}
+
+public void setId(int id) {
+    this.id = id;
+}
+
+public Livro(int id, String titulo,
+             String autor, int ano) {
+
+    this.id = id;
+    this.titulo = titulo;
+    this.autor = autor;
+    this.ano = ano;
+}
 
 }
 
